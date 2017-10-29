@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HManagerClient</string>
+
+	<string name="work_btn_submit">提交</string>
+
+    <string name="login_tv_account">账户</string>
+    <string name="login_tv_pass">密码</string>
+    <string name="login_rb_user">用户</string>
+    <string name="login_rb_manager">管理员</string>
+    <string name="login_btn_login">Login</string>
+
+    <string name="work_tv_title">标题</string>
+    <string name="work_tv_content">内容</string>
+    <string name="work_tv_time">日期</string>
+
+</resources>
