@@ -15,7 +15,6 @@
             android:layout_marginRight="16dp"
             android:background="@null"
             android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher_round"
             android:id="@+id/ib_add"/>
 
     <TextView

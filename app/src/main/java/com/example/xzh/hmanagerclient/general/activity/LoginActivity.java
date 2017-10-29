@@ -1,6 +1,5 @@
 package com.example.xzh.hmanagerclient.general.activity;
 
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,12 +8,7 @@ import android.widget.Toast;
 import com.example.xzh.hmanagerclient.R;
 import com.example.xzh.hmanagerclient.general.base.BaseActivity;
 import com.example.xzh.hmanagerclient.general.bean.User;
-import com.example.xzh.hmanagerclient.general.controller.DBController;
-import com.example.xzh.hmanagerclient.user.main.UserIndexActivity;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.example.xzh.hmanagerclient.user.activity.UserIndexActivity;
 
 /**
  * Created by Administrator on 2017/10/28.

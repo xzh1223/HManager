@@ -19,7 +19,7 @@ public class Work {
 
     private String workContent;
 
-    private Date workTime;
+    private String workTime;
 
     private User user;
 
@@ -47,11 +47,11 @@ public class Work {
         this.workContent = workContent;
     }
 
-    public Date getWorkTime() {
+    public String getWorkTime() {
         return workTime;
     }
 
-    public void setWorkTime(Date workTime) {
+    public void setWorkTime(String workTime) {
         this.workTime = workTime;
     }
 

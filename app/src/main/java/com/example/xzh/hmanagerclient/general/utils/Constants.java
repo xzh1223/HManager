@@ -8,5 +8,6 @@ public class Constants {
 
     public static final String ACCOUNT = "account";
     public static final String ID = "userID";
+    public static final String TAG = "HManager";
 
 }
