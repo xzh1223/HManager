@@ -25,6 +25,6 @@ public interface IRetrofit {
     Call<List<Work>> findWorksByUserId(@Path("userId") int userId);
 
     @POST("addWork")
-    Call addWork(@Body RequestBody body);
+    Call<Integer> addWork(@Body RequestBody body);
 
 }

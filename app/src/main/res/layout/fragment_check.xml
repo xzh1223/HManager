@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <include layout="@layout/layout_toolbar"></include>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rv_work"></android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-</LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@color/md_blue_400"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@null"
+                    android:elevation="3dp">
+
+                <ImageView
+                        android:id="@+id/iv_me_header"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/heng_1"/>
+
+                <TextView
+                        android:id="@+id/tv_me_slogan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_me_header"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <!--第一个卡片-->
+            <include layout="@layout/include_check_card1"/>
+
+            <!--第二个卡片-->
+            <include layout="@layout/include_check_card2"/>
+
+            <!--第三个卡片-->
+            <include layout="@layout/include_check_card3"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

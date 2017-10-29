@@ -85,15 +85,15 @@ public class WriteWorkActivity extends BaseActivity implements View.OnClickListe
      */
     private void postData(Work work) {
 
-        DBController.addWork(work, new Callback() {
+        DBController.addWork(work, new Callback<Integer>() {
             @Override
-            public void onResponse(Call call, Response response) {
+            public void onResponse(Call<Integer> call, Response<Integer> response) {
                 Log.e(TAG, "onResponse: " + response.body());
                 finish();
             }
 
             @Override
-            public void onFailure(Call call, Throwable t) {
+            public void onFailure(Call<Integer> call, Throwable t) {
                 Log.e(TAG, "onFailure: " + t.toString() );
             }
         });

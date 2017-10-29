@@ -48,10 +48,10 @@ public class DBController {
     /**
      *  Work 添加
      */
-    public static void addWork(Work work, Callback callback) {
+    public static void addWork(Work work, Callback<Integer> callback) {
         String json = GsonUtil.beanToJson(work);
         RequestBody body = RequestBody.create(MediaType.parse("application/json"), json);
-        Call call  = iRetrofit.addWork(body);
+        Call<Integer> call  = iRetrofit.addWork(body);
         call.enqueue(callback);
     }
 

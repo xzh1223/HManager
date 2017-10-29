@@ -19,4 +19,17 @@
     <string name="work_tv_content">内容</string>
     <string name="work_tv_time">日期</string>
 
+    <string name="play_up_card">上班</string>
+    <string name="play_down_card">下班</string>
+    <string name="play_overtime">加班</string>
+    <string name="play_overtime_stop">结束加班</string>
+    <string name="play_leave">请假申请</string>
+    <string name="play_allowance">补助申请</string>
+    <string name="play_error">异常申请</string>
+    <string name="play_other">其他申请</string>
+    <string name="find_card">打卡记录</string>
+    <string name="find_mine">个人资料</string>
+
+    <string name="xxxxx">实时记录</string>
+
 </resources>
